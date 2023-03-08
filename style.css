@@ -8,21 +8,26 @@
 
   body {
     font-family: Arial, sans-serif;
- 
+    border-style: groove ;
+    border-radius: 5px;
+    box-shadow: 6px 16px 10px 16px lavender;
+    border-radius: 15px;
+    border-color:#fff;
    }
   
   .headerline {
-    background-image: linear-gradient(45deg, rgb(21, 91, 177),#0da3b7); 
+    background-image:url(./image/living-room.webp);
+    /* background-image: linear-gradient(45deg, rgb(21, 91, 177),#0da3b7);  */
     width: 100%;
     height: 60px;
     color: #fff; 
     display: block;
-    /* border-style: groove;
-    border-color: #333;
-    */
-    border-radius: 5px;
+    border-style: groove;
+    border-color: #d7dedd;
     letter-spacing: 10px;
     padding: 0px;
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
   }
 
   .inner_header{
@@ -57,12 +62,12 @@
     background-color: #fff;
     display: flex;
     flex-direction: row;
-    border: 1px solid;
-    border-radius: 5px;
+    border: 0px solid;
     /* padding: 1rem; */
     align-items: center;
     justify-content: space-evenly;  
-    text-align: center; 
+    text-align: center;
+    height: 100px; 
     min-height: 3vh;
     padding: 0.5rem;
     /* border-style: hidden;
@@ -71,7 +76,7 @@
   }
   #living-room-btn{
     flex-grow: 1;
-    height: 50px;
+    height: 100%;
     /* border-color: #1592ab ;
     border-style: outset; */
     color: black;
@@ -84,6 +89,10 @@
     text-align: center;
     font-size: large;
     min-height: 0vh;
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
+    background-image:url(./image/button-living-room.jpg);
+   
   }
   #living-room-btn:hover {
     box-shadow: inset 535px 0 0 0 #1592ab;
@@ -92,47 +101,55 @@
   }
   #kitchen-btn{
     flex-grow: 1;
-    height: 50px;
-    border: 0px solid;
-    border-color: #1592ab ;
-    border-style: outset;
+    height: 100%;
+    /* border-color: #1592ab ;
+    border-style: outset; */
     color: black;
     background-color: #fff;
     border-radius: 4px;
+    border: 0px solid;
     box-shadow: inset 0 0 0 0 #155dd1;
     transition: ease-out 0.3s;
     outline: none;
     text-align: center;
     font-size: large;
     min-height: 0vh;
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
+    background-image:url(./image/button-living-room.jpg);
   }
 
   #kitchen-btn:hover {
     box-shadow: inset 500px 0 0 0 #1592ab;
     cursor: pointer;
     color: #000;
+    
   }
   #bedroom-btn{
     flex-grow: 1;
-    height: 50px;
-    border: 0px solid;
-    border-color: #1592ab ;
-    border-style: outset;
+    height: 100%;
+    /* border-color: #1592ab ;
+    border-style: outset; */
     color: black;
     background-color: #fff;
     border-radius: 4px;
+    border: 0px solid;
     box-shadow: inset 0 0 0 0 #155dd1;
     transition: ease-out 0.3s;
     outline: none;
     text-align: center;
     font-size: large;
     min-height: 0vh;
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
+    background-image:url(./image/button-living-room.jpg);
   }
   #bedroom-btn:hover {
     box-shadow: inset 500px 0 0 0 #1592ab;
     cursor: pointer;
     color: #000;
   }
+ 
   nav li {
     margin-right: 1rem;
   }
@@ -153,6 +170,67 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  td div {
+    /* div will now take up full 200px of parent's height */
+    height: 100%;
+}
+  .wrapper{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+#lamp{
+  margin-top: 0px;
+  justify-content: space-around;
+}
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.toggle-btn{
+    width: 30px;
+    height: 12px;
+    background: gray;
+    margin-top: 0%;
+    border-radius: 30px;
+    padding:  5px;
+    margin: 0px;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn > .inner-circle{
+    width: 13px;
+    height: 13px;
+    background: white;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn.active{
+    background: #21ecf3;
+    box-shadow: 0 0 10px #21ecf3, 0 0 20px #21ecf3, 0 0 20px #21ecf3;
+    transition-delay:0.5s;
+}
+.toggle-btn.active> .inner-circle{
+    margin-left: 20px;
+}
   .room-container {
     display: none;
     height: 100%; 
@@ -167,13 +245,107 @@
   }
   .livingroom-container {
     display: grid;
-    grid-template-rows: 100px 100px 480px;
+    grid-template-rows: 140px 140px 480px;
     grid-template-columns: 1fr 1fr;
    
   }
   .living-sensors-item {
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    border-collapse: collapse;
+    height: 100px;
   }
+  .circle{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .circle::before{
+    content: '';
+    position: absolute;
+    inset: -10px 20px;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    transition: 0.5s;
+    animation: animate 4s linear infinite ;
+  }
+  .circle:hover::before{
+    inset: -20px 0px;
+  }
+  @keyframes animate{
+    0%
+    {
+      transform: rotate(0deg);
+    }
+    100%
+    {
+      transform: rotate(360deg);
+    }
+  }
+  .circle::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .content{
+    position: absolute;
+    inset: 20px;
+    /* border: 6px solid #070a1c; */
+    z-index: 3;
+    border-radius: 50%;
+    /* overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  }
+  .content h2{
+    position: relative;
+    font-size: 1.5em;
+    text-align: end;
+    color: rgb(198, 191, 191);
+    font-weight: 200;
+    letter-spacing: 0.05;
+    text-transform: uppercase;
+  }
+  .content img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    transform: 0.5s;
+    pointer-events: none;
+    z-index: 3 ;
+  }
+  .circle:hover .content img{
+    opacity: 0;
+  }
+  .living-sensors-item table{
+    height: 70px;
+    width: 650px;
+    table-layout: fixed;
+  }
+  .living-sensors-item table td {
+    vertical-align: center;
+    text-align: center;
+    border: 0px solid;
+    padding: 2%;
+    text-align:unset ;
+    text-align: center;
+  }
+  /* .living-sensors-item td p{
+    height: 10px;
+  } */
   .living-whether-item {
     justify-content: space-around;
   }
@@ -182,13 +354,10 @@
     grid-column: span 2;
     background-color: #f2f2f2;
     align-items: center;
+    height: auto;
+    padding: 0px;
   }
-  .living-divices-item {
-    grid-row: span 2;
-    grid-column: span 2;
-    background-color: #f2f2f2;
-    align-items: center;
-  }
+
   .divices-item-divine {
     display: grid;
     grid-template-rows: 80px 80px 80px 80px 80px 80px;
@@ -222,8 +391,8 @@
   .toggle {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 45px;
+    height: 25px;
   }
   
   .toggle input {
@@ -245,8 +414,8 @@
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 20px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -255,23 +424,24 @@
   }
   
   input:checked + .slider {
-    background-color: #28d05d;
+    background-color:#04f86a93 ;
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
   }
   
   .slider.round {
-    border-radius: 34px;
+    border-radius: 25px;
   }
   
   .slider.round:before {
     border-radius: 50%;
   }
   .flex-item-3-divine-1 {
+    background-image: url(./image/gray_background-1.jpg);
     grid-row: 1 / 4;
     grid-column: 1 / 2;
     background-color: #f2f2f2;
@@ -281,7 +451,41 @@
     border-color: #d7dedd;
     border-radius: 5px;
     justify-content: space-around;
-  } 
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
+    /* overflow: hidden;
+    align-items: center;
+    position: relative; */
+  }
+  /* .flex-item-3-divine-1::before{
+    background-image: conic-gradient(
+     #ff0052 20deg, 
+     transparent 120deg
+     );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+  }
+  .flex-item-3-divine-1::after{
+    background: #101010;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052; 
+    box-shadow: inset  20px 20px 20px #0000008c;
+  }
+  @keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(-360deg);
+    }
+  } */
+
   .flex-item-3-divine-2 {
     grid-row: 1 / 4;
     grid-column: 2 / 3;
@@ -290,6 +494,9 @@
     border-style: groove;
     border-color: #d7dedd;
     border-radius: 5px;
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
+    background-image: url(./image/gray_background-1.jpg);
   } 
   .flex-item-3-divine-3 {
     grid-row: 1 / 4;
@@ -299,6 +506,9 @@
     border-style: groove;
     border-color: #d7dedd;
     border-radius: 5px;
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
+    background-image: url(./image/gray_background-1.jpg);
   } 
   .flex-item-3-divine-4 {
     grid-row: 4 / 7;
@@ -308,6 +518,9 @@
     border-color: #d7dedd;
     border-radius: 5px;
     justify-content: space-evenly;
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
+    background-image: url(./image/gray_background-1.jpg);
   } 
   .flex-item-3-divine-5 {
     grid-row: 4 / 7;
@@ -317,6 +530,9 @@
     border-color: #d7dedd;
     border-radius: 5px;
     justify-content: space-around;
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
+    background-image: url(./image/gray_background-1.jpg);
   } 
   .flex-item-3-divine-6 {
     grid-row: 4 / 7 ;
@@ -327,6 +543,9 @@
     border-radius: 5px;
     justify-content: space-evenly;
     border-style: groove;
+    box-shadow: 16px 14px 20px;
+    border-radius: 10px;
+    background-image: url(./image/gray_background-1.jpg);
   } 
   table {
     width: 100%;
@@ -338,6 +557,7 @@
     margin-left: auto;
     margin-right: auto;
     border: 0px solid;
+    margin-top: 0cm;
   }
   table td input{
     display: block;
@@ -347,8 +567,8 @@
     padding: 0px;
     vertical-align: bottom;
   }
+
   table td {
-    width: 100%;
     border-collapse: collapse;
     border: 1px solid #ddd;
     text-align: center;
@@ -377,14 +597,16 @@
     border: 0px solid;
 }
   footer {
-    background-image: linear-gradient(45deg, rgb(21, 91, 177),#0da3b7); 
+    background-image:url(./image/living-room.webp);
+    /* background-image: linear-gradient(45deg, rgb(21, 91, 177),#0da3b7);  */
     /* border-style: groove;
     border-color: #333;
     border-radius: 10px; */
+    height: 50px;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
   }
   

@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>SmartHome Interface</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
   </head>
   <body>
       <div class="headerline">
@@ -23,16 +27,43 @@
       <div id="livingroom" class="room-container">
             <div class="livingroom-container">
                   <div class="living-sensors-item">
-                    <td>
-                      <img src="image/temparature.png" alt="temparature">
-                    </td>
-                  <td>
-                    <img src="image/humidity.png" alt="humidity"> 
-                  </td> 
-                    <img src="image/light.png" alt="light"> 
-                    <td>
-                    <img src="image/gas.png" alt="gas">
-                  </td>
+                    <table>
+                      <tr>
+                        <td>
+                          <div class="circle">
+                            <div class="content">
+                                <img src="image/temparature.png">
+                             <!-- <p><span id="temp">None</span>°C</p>  -->
+                                <h2><span id="temp">None</span>°C</h2>
+                            </div>
+                            
+                          </div>
+                          
+                        </td> 
+                        <td>
+                          <div class="circle">
+                            <div class="content">
+                          <img src="image/humidity.png" alt="Humidity">
+                          <!-- <p><span id="hum">None</span>%</p>  -->
+                        </div>
+                      </div>
+                        </td>
+                        <td>
+                          <div class = "wrapper">
+                          <img id="d01_img" src="image/lamp-off.png" alt="img">
+                            <div class="progress">
+                              <div class="toggle-btn" id="unact">
+                              <div class="inner-circle"></div>
+                            </div>
+                            <div class="toggle-btn active" id="act">
+                              <div class="inner-circle"></div>
+                            </div>
+                            </div>
+                          </div>
+                        </td>  
+                      </tr>
+                    </table>
+                    
                   </div>
                   <div class="living-whether-item">
                     <table>
@@ -57,10 +88,10 @@
                                     <table>
                                       <tr>
                                         <td>
-                                        <label class="toggle">
-                                          <input type="checkbox">
-                                          <span class="slider round"></span>
-                                        </label>
+                                          <label class="toggle">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                          </label>
                                         </td>
                                         <td>
                                           <p>25<span></span>°C</p>
@@ -343,6 +374,7 @@
     </div>
     </div>
   </div>
+    <script src="firebase-config.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
     <footer>
