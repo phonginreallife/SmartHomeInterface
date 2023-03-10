@@ -444,18 +444,17 @@
     background-image: url(./image/gray_background-1.jpg);
     grid-row: 1 / 4;
     grid-column: 1 / 2;
-    background-color: #f2f2f2;
     /* background-image: linear-gradient(45deg, #fff,#216335); */
     align-items: center;
     border-style: groove;
     border-color: #d7dedd;
     border-radius: 5px;
     justify-content: space-around;
-    box-shadow: 16px 14px 20px;
+    box-shadow: 16px 14px 20px #0000008c;
     border-radius: 10px;
-    /* overflow: hidden;
-    align-items: center;
-    position: relative; */
+    overflow: hidden;
+    /* align-items: center; */
+    /* position: relative; */
   }
   /* .flex-item-3-divine-1::before{
     background-image: conic-gradient(
@@ -494,7 +493,7 @@
     border-style: groove;
     border-color: #d7dedd;
     border-radius: 5px;
-    box-shadow: 16px 14px 20px;
+    box-shadow: 16px 14px 20px #0000008c;
     border-radius: 10px;
     background-image: url(./image/gray_background-1.jpg);
   } 
@@ -506,7 +505,7 @@
     border-style: groove;
     border-color: #d7dedd;
     border-radius: 5px;
-    box-shadow: 16px 14px 20px;
+    box-shadow: 16px 14px 20px #0000008c;
     border-radius: 10px;
     background-image: url(./image/gray_background-1.jpg);
   } 
@@ -518,7 +517,7 @@
     border-color: #d7dedd;
     border-radius: 5px;
     justify-content: space-evenly;
-    box-shadow: 16px 14px 20px;
+    box-shadow: 16px 14px 20px #0000008c;
     border-radius: 10px;
     background-image: url(./image/gray_background-1.jpg);
   } 
@@ -530,7 +529,7 @@
     border-color: #d7dedd;
     border-radius: 5px;
     justify-content: space-around;
-    box-shadow: 16px 14px 20px;
+    box-shadow: 16px 14px 20px #0000008c;
     border-radius: 10px;
     background-image: url(./image/gray_background-1.jpg);
   } 
@@ -543,7 +542,7 @@
     border-radius: 5px;
     justify-content: space-evenly;
     border-style: groove;
-    box-shadow: 16px 14px 20px;
+    box-shadow: 16px 14px 20px #0000008c;
     border-radius: 10px;
     background-image: url(./image/gray_background-1.jpg);
   } 
