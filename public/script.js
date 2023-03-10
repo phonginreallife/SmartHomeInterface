@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   page1Button.addEventListener("click", () => {
     page1Container.classList.add("show");
     page2Container.classList.remove("show");
-    page3Container.classList.remove("show");
+    document.getElementById("image-container-id").remove("show");
   });
   
   page2Button.addEventListener("click", () => {

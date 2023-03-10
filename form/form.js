@@ -61,13 +61,13 @@ document.getElementById("log-btn").addEventListener('click', function(){
     const user = userCredential.user;
     document.getElementById("result-box").style.display="block";
      document.getElementById("register-div").style.display="none";
-     document.getElementById("result").innerHTML="Welcome <br>"+registerEmail+" was Registered Successfully!";
+     document.getElementById("result-error-box").innerHTML="Welcome <br>"+registerEmail+" was Registered Successfully!";
   }).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     document.getElementById("result-box").style.display="block";
      document.getElementById("register-div").style.display="none";
-     document.getElementById("result").innerHTML="Sorry ! <br>"+errorMessage;
+     document.getElementById("result").innerHTML="Sorry ! <br>"+ errorMessage;
 
   });
 });
@@ -75,7 +75,7 @@ document.getElementById("log-btn").addEventListener('click', function(){
 
 document.getElementById("log-in-btn").addEventListener('click', function(){
   signOut(auth).then(() => {
-      window.location.href = "https://smarthome-interface.web.app/";
+      window.location.href = "https://smarthome-interface.firebaseapp.com/";
 
   });
 });

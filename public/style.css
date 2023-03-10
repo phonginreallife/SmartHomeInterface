@@ -484,7 +484,54 @@
       transform: rotate(-360deg);
     }
   } */
-
+  .image-container{
+    display: grid;
+    grid-template-rows: 714px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6em;
+  }
+#living-room-image{
+  background-image: url(/public/image/bedroomimage.jpg);
+  background-repeat: no-repeat;
+  height: 650px;
+  position: relative;
+  border-style: groove;
+  border-color: #d7dedd;
+  border-radius: 5px;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: fill;
+}
+#bed-room-image{
+  background-image: url(/public/image/kitt.jpg);
+  background-repeat: no-repeat;
+  height: 650px;
+  position: relative;
+  border-style: groove;
+  border-color: #d7dedd;
+  border-radius: 5px;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+#bed-room-image img{
+  object-fit: fill;
+}
+#kitchen-room-image{
+  background-image: url(/public/image/bedd.jpg);
+  background-repeat: no-repeat;
+  height: 650px;
+  position: relative;
+  border-style: groove;
+  border-color: #d7dedd;
+  border-radius: 5px;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: fill;
+}
   .flex-item-3-divine-2 {
     grid-row: 1 / 4;
     grid-column: 2 / 3;
