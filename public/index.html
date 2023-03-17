@@ -11,380 +11,367 @@
   
   </head>
   <body>
-      <div class="headerline">
-        <div class="inner_header">
-          <div class="logo_container">
-            <h1>SMART<span>HOME</span></h1>
+    <div class="headerline">
+      <div class="inner_header">
+        <div class="logo_container">
+          <h1><span>SMART HOME</span></h1>
+        </div>
+      </div>
+    </div>
+  <div class="main">
+      <div id="button-show" class="button">
+          <button id="living-room-btn" class="button-widget">Living Rooms</button>
+          <button id="kitchen-btn" class="button-widget">Kitchen</button>
+          <button id="bedroom-btn" class="button-widget">Bedroom</button>
+      </div>
+      <div class="menu-widget">
+        <div class="menu-home">
+          <div class="menu-button-widget">
+            <button id="living-room-btn-2" class="button-widget"> <img src="./image/sofa.png" alt=""></button>
+            <button id="kitchen-btn-2" class="button-widget"><img src="./image/kitchen.png" alt=""></button>
+            <button id="bedroom-btn-2" class="button-widget"><img src="./image/bed.png" alt=""></button>
+            </div>
+          <div class="menu-settings">
+              <button class="button-widget"><img src="./image/cogwheel.png" alt=""></button>
           </div>
         </div>
       </div>
-    <nav>
-        <button id="living-room-btn">Living Rooms</button>
-        <button id="kitchen-btn">Kitchen</button>
-        <button id="bedroom-btn">Bedroom</button>
-    </nav>
-    <div class="main">
-      <div id="image-container-id" class="image-container">
-        <div id="living-room-image" class="image-room">
-        </div>
-        <div id="bed-room-image" class="image-room"></div>
-        <div id="kitchen-room-image" class="image-room"></div>
-      </div> 
-      <div id="livingroom" class="room-container">
-            <div class="livingroom-container">
-                  <div class="living-sensors-item">
-                    <table>
-                      <tr>
-                        <td>
-                          <div class="circle">
+      <div id="livingroom" class="containers-room">
+          <div class="living-room-containers">
+          <div id="mainliving" class="main-menu-contents">
+              <div class="main-menu-contents-1">
+                  <div id="witget0" class="device">
+                          <div class="tv-device-button">
+                              <div class="progress">
+                                  <div class="toggle-btn0" id="unact0">
+                                  <div class="inner-circle"></div>
+                                </div>
+                                <div class="toggle-btn0 active" id="act0">
+                                  <div class="inner-circle"></div>
+                                </div>
+                                </div>
+                          </div>
+                          <div class="tv-device-image">
+                              <img id="tv" src="image/TCL-LED.png" alt="">
+                          </div>
+                          <div class="tv-device-name">
+                              <p>Television</p>
+                          </div>
+                  </div>
+                  <div id="witget1" class="device">
+                      <div class="air-condition-button">
+                          <div class="toggle-btn1" id="unact1">
+                          <div class="inner-circle"></div>
+                        </div>
+                        <div class="toggle-btn1 active" id="act1">
+                          <div class="inner-circle"></div>
+                        </div>
+                  </div>
+                  <div class="air-condition-image">
+                      <img src="image/air-condisioner.jpg" alt="">
+                  </div>
+                  <div id="aircondition-widget" class="slider_audio">
+                      <input type="range" min="0" max="100" value="10">
+                      <p style="color:rgba(28, 26, 26, 0.852);"><span id="air-condisioner">None</span>°C</p>
+                  </div>
+                  <div class="air-condition-name">
+                      <p>Air Condisioner</p>
+                  </div>
+                  </div>
+                  <div id="witget2" class="device">
+                      <div class="robot-cleaner-button">
+                              <div class="toggle-btn2" id="unact2">
+                              <div class="inner-circle"></div>
+                            </div>
+                            <div class="toggle-btn2 active" id="act2">
+                              <div class="inner-circle"></div>
+                            </div>
+                      </div>
+                      <div class="robot-cleaner-image">
+                          <img src="image/cleaner-robot.avif" alt="">
+                      </div>
+                      <div class="robot-cleaner-name">
+                          <p>Robot Cleaner</p>
+                      </div>
+                  </div>
+                  </div>
+              <div class="main-menu-contents-2">
+                  <div id="witget3" class="device">
+                      <div class="smart-audio-button">
+                          <div class="toggle-btn3" id="unact3">
+                              <div class="inner-circle"></div>
+                            </div>
+                            <div class="toggle-btn3 active" id="act3">
+                              <div class="inner-circle"></div>
+                            </div>
+                      </div>
+                      <div class="smart-audio-image">
+                          <img id="audio" src="image/audio.jpg!d" alt="">
+                      </div>
+                      <div id="audio-widget" class="slider_audio">
+                          <input type="range" min="0" max="100" value="10">
+                          <img id="volume" src="image/volume-up-interface-symbol.png" alt="img">
+                      </div>
+                      <div class="smart-audio-name">
+                          <p>Audio System</p>
+                      </div>
+                  </div>
+                  <div id="witget4" class="device">
+                      <div class="smart-lock-button">
+                          <div class="progress">
+                              <div class="toggle-btn4" id="unact4">
+                              <div class="inner-circle"></div>
+                            </div>
+                            <div class="toggle-btn4 active" id="act4">
+                              <div class="inner-circle"></div>
+                            </div>
+                            </div>
+                      </div>
+                      <div class="smart-lock-image">
+                          <img id="lock" src="image/smart-door-lock.webp" alt="">
+                      </div>
+                      <div class="smart-lock-name">
+                          <p>Smart Lock</p>
+                      </div>
+                  </div>
+                  <div id="witget5" class="device">
+                      <div class="smart-curtain-button">
+                          <div class="progress">
+                              <div class="toggle-btn5" id="unact5">
+                              <div class="inner-circle"></div>
+                            </div>    
+                            <div class="toggle-btn5 active" id="act5">
+                              <div class="inner-circle"></div>
+                            </div>
+                            </div>
+                      </div>
+                      <div class="smart-curtain-image">
+                          <img id="curtain" src="image/curtains.webp" alt="">
+                      </div>
+                      <div class="smart-curtain-name">
+                          <p>Curtains</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="image">
+              <div class="image-contents">
+                  <div class="image-living-room">
+                      <img id="living-image" src="image/living-room.webp" alt="img">
+                  </div>
+                  <div class="camera-living-room">
+                      <div class="temp">
+                          <div id="cirle-temp" class="circle">
                             <div class="content">
-                                <img src="image/temparature.png">
+                                  <div>
+                                  <img src="image/high-temperature-gradient-circle-glyph-inverted-icon-vector.webp">
+                                  <!-- <p><span id="temp" >None</span>°C</p> -->
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <p style="color:rgb(247, 247, 247);"><span id="temp">None</span>°C</p>
+                          </div>    
+                      </div>
+                      <div class="hum">
+                          <div id="cirle-hum" class="circle">
+                              <div class="content">
+                                      <img src="image/humidity-gradient-circle-glyph-inverted-icon-vector.jpg" alt="Humidity">
+                                      <!-- <p><span id="hum">None</span>%</p>  -->
+                              </div>
+                          </div>
+                          <div>
+                              <p style="color:rgb(247, 247, 247);"><span id="hum" style="color:rgb(247, 247, 247);">None</span>%</p>
+                          </div> 
+                      </div>
+                      <div id= "witget6" class = "wrapper">
+                          <img id="d01_img" src="image/idea.png" alt="img">
+                              <div class="toggle-btn6" id="unact6">
+                                      <div class="inner-circle"></div>
+                              </div>
+                              <div class="toggle-btn6 active" id="act6">
+                                      <div class="inner-circle"></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="music-room">
+                  <div class="song"> 
+                     <div id="namesong">
+                          <div>
+                              <h2>Duc Phong</h2>
+                          </div>
+                          <div>
+                              <p>Music is my destiny</p>
+                          </div>
+                      </div>
+                      <div id="image-song">
+                          <img src="image/mtphong.jpg" alt="music">
+                      </div>
+                  </div>
+                     <div id="background_slider" class="slider_class">
+                              <input type="range" min="0" max="100" value="10">
+                      </div>
+                      <div class="buttonsong">
+                              <img src="image/play-pause-right.png" alt="">
+                              <img src="image/play.png" alt="">
+                              <img src="image/play-pause-left.png" alt="">
+                      </div>
+                     </div>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="bedroom" class="containers-room">
+          <div class="living-room-containers">
+          <div id="main-bedroom" class="main-menu-contents">
+              <div class="main-menu-contents-1">
+                  <div id="tv-device" class="device">
+                          <div class="tv-device-button">
+                              <!-- <p>Button</p> -->
+                          </div>
+                          <div class="tv-device-image">
+                              <!-- <img src="/television.png" alt=""> -->
+                          </div>
+                          <div class="tv-device-name">
+                              <!-- <p>Television</p> -->
+                          </div>
+                  </div>
+                  <div id="air-condition-device" class="device"></div>
+                  <div id="temp-measure" class="device"></div>
+          </div>
+              <div class="main-menu-contents-2">
+                  <div id="smart-light" class="device"></div>
+                  <div id="smart-lock" class="device"></div>
+                  <div id="smart-window" class="device"></div>
+              </div>
+          </div>
+      
+          <div class="image">
+              <div class="image-contents">
+                  <div class="image-living-room">
+                      <img src="image/bedroom.jpg" alt="image">
+                  </div>
+                  <div class="camera-living-room">
+                      <div class="temp">
+                          <div id="cirle-temp" class="circle">
+                            <div class="content">
+                                  <img src="image/temparature.png">
                              <!-- <p><span id="temp">None</span>°C</p>  -->
-                                <h2><span id="temp">None</span>°C</h2>
                             </div>
-                            
-                          </div>
-                          
-                        </td> 
-                        <td>
-                          <div class="circle">
-                            <div class="content">
-                          <img src="image/humidity.png" alt="Humidity">
-                          <!-- <p><span id="hum">None</span>%</p>  -->
-                        </div>
-                      </div>
-                        </td>
-                        <td>
-                          <div class = "wrapper">
-                          <img id="d01_img" src="image/lamp-off.png" alt="img">
-                            <div class="progress">
-                              <div class="toggle-btn" id="unact">
-                              <div class="inner-circle"></div>
-                            </div>
-                            <div class="toggle-btn active" id="act">
-                              <div class="inner-circle"></div>
-                            </div>
-                            </div>
-                          </div>
-                        </td>  
-                      </tr>
-                    </table>
-                    
-                  </div>
-                  <div class="living-whether-item">
-                    <table>
-                      <tr>
-                        <td>
-                          <img src="image/cloudy1.png" alt="cloudy">
-                        </td>
-                        <td>
-                          <p>Cloudy, rain</p>
-                        </td>
-                      </tr>
-                      <!-- <tr>
-                        <p>Temparature: 25*C</p>
-                        <p>Cloudy, rain</p>
-                      </tr> -->
-                    </table>
-                  </div>
-                  <div class="living-divices-item">
-                        <div class="divices-item-divine">            
-                                  <div class="flex-item-3-divine-1">
-                                    <div class="contents">
-                                    <div id="table-tempshow">
-                                    <table>
-                                      <tr>
-                                        <td>
-                                          <label class="toggle">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                          </label>
-                                        </td>
-                                        <td>
-                                          <p>25<span></span>°C</p>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                    <table>
-                                      <tr>
-                                          <td><img src="image/air-conditioning.png" alt="air-conditione"></td>
-                                      </tr>
-                                      <tr>
-                                        <td id="background_slider_1">
-                                        <div class="slider_class">
-                                         <input type="range" min="0" max="100" value="10">
-                                        </div>
-                                      </td>
-                                        </tr>                               
-                                    </table>
-                                  </div>
-                                  </div>   
-                                  <div class="flex-item-3-divine-2">
-                                    <table> 
-                                      <tr>
-                                        <td>
-                                          <label class="toggle">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                          </label>
-                                        </td>
-                                        </tr>
-                                          <tr>
-                                            <td>
-                                            <img src="image/television.png" alt="television">
-                                            </td>
-                                           </tr>
-                                           <tr>
-                                            <td id="background_slider_2">
-                                            <div class="slider_class">
-                                              <input type="range" min="0" max="100" value="10">
-                                            </div>
-                                          </td>
-                                          </tr>
-                                        </table>
-                                  </div>
-                                  <div class="flex-item-3-divine-3">
-                                    <table> 
-                                      <tr>
-                                        <td>
-                                          <label class="toggle">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                          </label>
-                                        </td>
-                                        </tr>
-                                          <tr>
-                                            <td>
-                                            <img src="image/audio-system.png" alt="television">
-                                          </td>
-                                           </tr>
-                                           <tr>
-                                            <td id="background_slider_3">
-                                            <div class="slider_class">
-                                             <input type="range" min="0" max="100" value="10">
-                                            </div>
-                                          </td>
-                                          </tr>
-                                        </table>
-                                  </div>
-                                  <div class="flex-item-3-divine-4">
-                                    <table> 
-                                      <tr>
-                                        <td>
-                                          <label class="toggle">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                          </label>
-                                        </td>
-                                        </tr>
-                                          <tr>
-                                            <td>
-                                            <img src="image/smart-door.png" alt="television">
-                                          </td>
-                                           </tr>
-                                           <tr>
-                                            <td id="background_slider_4">
-                                            <div class="slider_class">
-                                              <input type="range" min="0" max="100" value="10">
-                                            </div>
-                                          </td>
-                                          </tr>
-                                        </table>
-                                    </div>
-                                  <div class="flex-item-3-divine-5">
-                                    <table> 
-                                      <tr>
-                                        <td>
-                                          <label class="toggle">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                          </label>
-                                        </td>
-                                        </tr>
-                                          <tr>
-                                            <td>
-                                            <img src="image/curtains.png" alt="television">
-                                          </td>
-                                           </tr>
-                                           <tr>
-                                            <td id="background_slider_5">
-                                            <div class="slider_class">
-                                              <input type="range" min="0" max="100">
-                                            </div>
-                                          </td>
-                                          </tr>
-                                        </table>
-                                    </div>
-                                  <div class="flex-item-3-divine-6">
-                                    <table> 
-                                      <tr>
-                                        <td>
-                                          <label class="toggle">
-                                            <input type="checkbox">
-                                            <span class="slider round"></span>
-                                          </label>
-                                        </td>
-                                        </tr>
-                                          <tr>
-                                            <td>
-                                            <img src="image/window.png" alt="television">
-                                          </td>
-                                           </tr>
-                                           <tr>
-                                            <td id="background_slider_6">
-                                            <label class="slider_class">
-                                              <input type="range" min="0" max="100">
-                                            </label>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                    </div>
-                      </div>
-                </div>  
-              </div>
- 
-          </div>
-    <div id="kitchen" class="room-container">
-        <div class="livingroom-container">
-          <div class="living-sensors-item">
-            <td>
-              <img src="image/temparature.png" alt="temparature">
-            </td>
-          <td>
-            <img src="image/humidity.png" alt="humidity"> 
-          </td> 
-            <img src="image/light.png" alt="light"> 
-            <td>
-            <img src="image/gas.png" alt="gas">
-          </td>
-          </div>
-          <div class="living-whether-item">
-            <table>
-              <tr>
-                <td>
-                  <img src="image/cloudy1.png" alt="cloudy">
-                </td>
-                <td>
-                  <p>Cloudy, rain</p>
-                </td>
-              </tr>
-              
-            </table>
-          </div>
-          <div class="living-divices-item">
-                <div class="divices-item-divine">            
-                          <div class="flex-item-3-divine-1">
-                            <div id="table-tempshow">
-                            <table>
-                              
-                            </table>
-                          </div>
-                            <table>
-                                           
-                            </table>
                           </div>   
-                          <div class="flex-item-3-divine-2">
-                            <table> 
-                             
-                                </table>
+                      </div>
+                      <div class="hum">
+                          <div id="cirle-hum" class="circle">
+                              <div class="content">
+                                      <img src="image/humidity.png" alt="Humidity">
+                            <!-- <p><span id="hum">None</span>%</p>  -->
+                              </div>
                           </div>
-                          <div class="flex-item-3-divine-3">
-                            <table> 
-                             
-                                </table>
+                      </div>   
+                  </div>
+                  <div class="music-room">
+                  <div class="song"> 
+                     <div id="namesong">
+                          <div>
+                              <h2>Duc Phong</h2>
                           </div>
-                          <div class="flex-item-3-divine-4">
-                            <table> 
-                              
-                                </table>
-                            </div>
-                          <div class="flex-item-3-divine-5">
-                            <table> 
-                             
-                                </table>
-                            </div>
-                          <div class="flex-item-3-divine-6">
-                            <table> 
-                              
-                                </table>
-                            </div>
+                          <div>
+                              <p>20139084</p>
+                          </div>
+                      </div>
+                      <div id="image-song">
+                          <img src="image/mtphong.jpg" alt="music">
+                      </div>
+                  </div>
+                     <div id="background_slider" class="slider_class">
+                              <input type="range" min="0" max="100" value="10">
+                      </div>
+                      <div class="buttonsong">
+                              <img src="image/play-pause-right.png" alt="">
+                              <img src="image/play.png" alt="">
+                              <img src="image/play-pause-left.png" alt="">
+                      </div>
+                     </div>
+                     
+                  </div>
               </div>
-        </div>  
-  </div>
-    </div>
-    <div id="bedroom" class="room-container">
-      <div class="livingroom-container">
-        <div class="living-sensors-item">
-          <td>
-            <img src="image/temparature.png" alt="temparature">
-          </td>
-        <td>
-          <img src="image/humidity.png" alt="humidity"> 
-        </td> 
-          <img src="image/light.png" alt="light"> 
-          <td>
-          <img src="image/gas.png" alt="gas">
-        </td>
-        </div>
-        <div class="living-whether-item">
-          <table>
-            <tr>
-              <td>
-                <img src="image/cloudy1.png" alt="cloudy">
-              </td>
-              <td>
-                <p>Cloudy, rain</p>
-              </td>
-            </tr>
-            
-          </table>
-        </div>
-        <div class="living-divices-item">
-              <div class="divices-item-divine">            
-                        <div class="flex-item-3-divine-1">
-                          <div id="table-tempshow">
-                          <table>
-                            
-                          </table>
-                        </div>
-                          <table>
-                                                        
-                          </table>
-                        </div>   
-                        <div class="flex-item-3-divine-2">
-                          <table> 
-                           
-                              </table>
-                        </div>
-                        <div class="flex-item-3-divine-3">
-                          <table> 
-                           
-                              </table>
-                        </div>
-                        <div class="flex-item-3-divine-4">
-                          <table> 
-                            
-                              </table>
+          </div>
+      </div>
+      <div id="kitchen" class="containers-room">
+          <div class="living-room-containers">
+              <div id="mainkitchen" class="main-menu-contents">
+                  <div class="main-menu-contents-1">
+                      <div id="tv-device" class="device">
+                        
+                      </div>
+                      <div id="air-condition-device" class="device"></div>
+                      <div id="temp-measure" class="device"></div>
+              </div>
+                  <div class="main-menu-contents-2">
+                      <div id="smart-light" class="device"></div>
+                      <div id="smart-lock" class="device"></div>
+                      <div id="smart-window" class="device"></div>
+                  </div>
+              </div>
+          
+              <div class="image">
+                  <div class="image-contents">
+                      <div class="image-living-room">
+                          <img src="image/kitchen1.png" alt="image">
+                      </div>
+                      <div class="camera-living-room">
+                          <div class="temp">
+                              <div id="cirle-temp" class="circle">
+                                <div class="content">
+                                      <img src="image/temparature.png">
+                                 <!-- <p><span id="temp">None</span>°C</p>  -->
+                                </div>
+                              </div>   
                           </div>
-                        <div class="flex-item-3-divine-5">
-                          <table> 
-                           
-                              </table>
+                          <div class="hum">
+                              <div id="cirle-hum" class="circle">
+                                  <div class="content">
+                                          <img src="image/humidity.png" alt="Humidity">
+                                <!-- <p><span id="hum">None</span>%</p>  -->
+                                  </div>
+                              </div>
+                          </div>   
+                      </div>
+                      <div class="music-room">
+                      <div class="song"> 
+                         <div id="namesong">
+                              <div>
+                                  <h2>Duc Phong</h2>
+                              </div>
+                              <div>
+                                  <p>Music is my destiny</p>
+                              </div>
                           </div>
-                        <div class="flex-item-3-divine-6">
-                          <table> 
-                            
-                              </table>
+                          <div id="image-song">
+                              <img src="image/mtphong.jpg" alt="music">
                           </div>
-            </div>
-      </div>    
-    </div>
-    </div>
-  </div>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+                      </div>
+                         <div id="background_slider" class="slider_class">
+                                  <input type="range" min="0" max="100" value="10">
+                          </div>
+                          <div class="buttonsong">
+                                  <img src="image/play-pause-right.png" alt="">
+                                  <img src="image/play.png" alt="">
+                                  <img src="image/play-pause-left.png" alt="">
+                          </div>
+                         </div>
+                         
+                      </div>
+                  </div>
+              </div>
+      </div>
+
+  </div>  
+  <script type="text/javascript" src="script.js"></script>
+
     <footer>
       <!-- <p>&copy; 20139084 - Le Duc Phong</p> -->
     </footer>
    
+  </body>

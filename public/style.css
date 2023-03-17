@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
-*{
-  font-family: 'Source Sans Pro'sans-serif;
-  letter-spacing: 2px;
- 
-
-}  
 
   body {
     font-family: Arial, sans-serif;
@@ -16,8 +9,8 @@
    }
   
   .headerline {
-    background-image:url(./image/living-room.webp);
-    /* background-image: linear-gradient(45deg, rgb(21, 91, 177),#0da3b7);  */
+    /* background-image: url(image/living-room.webp);  */
+    background-color: rgb(47, 45, 45);
     width: 100%;
     height: 60px;
     color: #fff; 
@@ -25,7 +18,7 @@
     border-style: groove;
     border-color: #d7dedd;
     letter-spacing: 10px;
-    padding: 0px;
+    padding: 0em;
     box-shadow: 16px 14px 20px;
     border-radius: 10px;
   }
@@ -55,208 +48,6 @@
   .logo_container h1 span{
     font-weight: 800;
     font-size: 18px;
-  }
-
-
-  nav {
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    border: 0px solid;
-    /* padding: 1rem; */
-    align-items: center;
-    justify-content: space-evenly;  
-    text-align: center;
-    height: 100px; 
-    min-height: 3vh;
-    padding: 0.5rem;
-    /* border-style: hidden;
-    border-color: #fff; */
-    padding: 0px;
-  }
-  #living-room-btn{
-    flex-grow: 1;
-    height: 20%;
-    /* border-color: #1592ab ;
-    border-style: outset; */
-    color: black;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 0px solid;
-    box-shadow: inset 0 0 0 0 gray;
-    transition: ease-out 0.3s;
-    outline: none;
-    text-align: center;
-    font-size: large;
-    min-height: 0vh;
-    box-shadow: 16px 14px 20px;
-    border-radius: 10px;
-    background-image:url(./image/button-living-room.jpg);
-   
-  }
-  #living-room-btn:hover {
-    box-shadow: inset 535px 0 0 0 gray;
-    cursor: pointer;
-    color: #000;
-  }
-  #kitchen-btn{
-    flex-grow: 1;
-    height: 20%;
-    /* border-color: #1592ab ;
-    border-style: outset; */
-    color: black;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 0px solid;
-    box-shadow: inset 0 0 0 0 gray;
-    transition: ease-out 0.3s;
-    outline: none;
-    text-align: center;
-    font-size: large;
-    min-height: 0vh;
-    box-shadow: 16px 14px 20px;
-    border-radius: 10px;
-    background-image:url(./image/button-living-room.jpg);
-  }
-
-  #kitchen-btn:hover {
-    box-shadow: inset 500px 0 0 0 gray;
-    cursor: pointer;
-    color: #000;
-    
-  }
-  #bedroom-btn{
-    flex-grow: 1;
-    height: 20%;
-    /* border-color: #1592ab ;
-    border-style: outset; */
-    color: black;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 0px solid;
-    box-shadow: inset 0 0 0 0 gray;
-    transition: ease-out 0.3s;
-    outline: none;
-    text-align: center;
-    font-size: large;
-    min-height: 0vh;
-    box-shadow: 16px 14px 20px;
-    border-radius: 10px;
-    background-image:url(./image/button-living-room.jpg);
-  }
-  #bedroom-btn:hover {
-    box-shadow: inset 500px 0 0 0 gray;
-    cursor: pointer;
-    color: #000;
-  }
- 
-  nav li {
-    margin-right: 1rem;
-  }
-  
-  nav a {
-    text-decoration: none;
-    border-style: groove;
-    border-color: #333;
-    border-radius: 10px;
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-  }
-  #kitchen {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  td div {
-    /* div will now take up full 200px of parent's height */
-    height: 100%;
-}
-  .wrapper{
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-}
-#lamp{
-  margin-top: 0px;
-  justify-content: space-around;
-}
-
-.progress{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 0%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.toggle-btn{
-    width: 30px;
-    height: 12px;
-    background: gray;
-    margin-top: 0%;
-    border-radius: 30px;
-    padding:  5px;
-    margin: 0px;
-    transition: all 300ms ease-in-out;
-}
-.toggle-btn > .inner-circle{
-    width: 13px;
-    height: 13px;
-    background: white;
-    border-radius: 50%;
-    transition: all 300ms ease-in-out;
-}
-.toggle-btn.active{
-    background: #21ecf3;
-    box-shadow: 0 0 10px #21ecf3, 0 0 20px #21ecf3, 0 0 20px #21ecf3;
-    transition-delay:0.5s;
-}
-.toggle-btn.active> .inner-circle{
-    margin-left: 20px;
-}
-  .room-container {
-    display: none;
-    height: 100%; 
-  }
-  .show {
-    display: block;
-  }
-  td, th {
-    border: 1px solid #ddd;
-    padding: 0.5rem;
-    text-align: left;
-  }
-  .livingroom-container {
-    display: grid;
-    grid-template-rows: 140px 140px 480px;
-    grid-template-columns: 1fr 1fr;
-   
-  }
-  .living-sensors-item {
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    border-collapse: collapse;
-    height: 100px;
   }
   .circle{
     position: relative;
@@ -330,329 +121,453 @@
   .circle:hover .content img{
     opacity: 0;
   }
-  .living-sensors-item table{
-    height: 70px;
-    width: 650px;
-    table-layout: fixed;
-  }
-  .living-sensors-item table td {
-    vertical-align: center;
-    text-align: center;
+  .main {
+    background-color: #fff;
+    display: flex;
     border: 0px solid;
-    padding: 2%;
-    text-align:unset ;
-    text-align: center;
-  }
-  /* .living-sensors-item td p{
-    height: 10px;
-  } */
-  .living-whether-item {
-    justify-content: space-around;
-  }
-  .living-divices-item {
-    grid-row: span 2;
-    grid-column: span 2;
-    background-color: #f2f2f2;
-    align-items: center;
-    height: auto;
+    padding: 1rem;
+    min-height: 3vh;
+    padding: 0.5rem;
+    height: 80%;
+    width: 100%;
+    /* border-style: hidden;
+    border-color: #fff; */
     padding: 0px;
+    gap: 1em;
+    justify-content: space-evenly;
+  }
+  .button{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    padding: 1rem;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+  .button-widget{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    /* border-color: #1592ab ;
+    border-style: outset; */
+    color: black;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 0px solid;
+
+    box-shadow: inset 0 0 0 0 gray;
+    transition: ease-out 0.3s;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    /* box-shadow: 16px 14px 20px; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px #ffffff, 0 0 20px #131313, 0 0 20px #1f1f20; */
+   
+  }
+  .button-widget:hover {
+    background: #efeded;
+    /*   */
+    transition-delay: 0.1s;
+  }
+ 
+  .containers-room {
+    display: none;
+    height: 110vh;
+    width: 100%;
+    justify-content: wrap;
+    gap: 1em; 
+    border-radius: 30px;
+    border-color: rgba(105, 103, 103, 0.592);
+    /* background-image: linear-gradient(45deg, rgb(58, 55, 55),#292c2c);  */
+  }
+  /* .containers-room:hover {
+    box-shadow: inset -1000px 0 0 0 rgb(171, 164, 164);
+    cursor: pointer;
+    color: #000;
+  } */
+
+  .main-menu-contents{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    flex-direction: column;
+  }
+  .main-menu-contents-1{
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    gap: 1em;
+  }
+  #tv{
+    height: 230px;
+    width: 200px;
+    object-fit: cover;
+  }
+  #audio{
+    height: 120px;
+    width: 200px;
+  }
+  #lock, #curtain {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;  
+  }
+  .device{
+    display: flex;
+    height: 80%;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    border: 0px solid;
+    border-style: groove;
+    /* box-shadow: inset 0 0 0 0 rgb(251, 251, 251); */
+    transition: ease-out 0.3s;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    min-height: 0vh;
+    padding: 0.5em ;
+    object-fit: cover;
+  }
+  .device img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+  }
+  #volume{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+  }
+  .device:hover {
+    /* box-shadow: inset -535px 0 0 0 rgb(236, 234, 234);
+    cursor: pointer;
+    color: #000; */
+    background: #ffffff;
+     box-shadow: 0 0 10px #ffffff, 0 0 20px #131313, 0 0 20px #1f1f20;
+    transition-delay: 0.1s;
+  }
+  .device img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0px solid;
+    border-radius: 0px;
+    object-fit: cover;
+  }
+  .main-menu-contents-2{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* /* padding: 1em; */
+    gap: 1em;
   }
 
-  .divices-item-divine {
-    display: grid;
-    grid-template-rows: 80px 80px 80px 80px 80px 80px;
-    grid-template-columns: 1fr 1fr  1fr;
-    position: relative;
-    background-color: #fff;
-    grid-gap: 1em; 
-    border-radius: 4px;
-  }
-  .divices-item-divine td {
-    border: 0px solid;
-  }
-  .slider_class input{
-    width: 70%;
-    height: 3px;
-    accent-color:  #68b6f2;
-  }
-  #background_slider_1{
-    background-color: rgb(255, 255, 255);
-  }#background_slider_2{
-    background-color: rgb(255, 255, 255);
-  }#background_slider_3{
-    background-color: rgb(255, 255, 255);
-  }#background_slider_4{
-    background-color: rgb(255, 255, 255);
-  }#background_slider_5{
-    background-color: rgb(255, 255, 255);
-  }#background_slider_6{
-    background-color: rgb(255, 255, 255);
-  }
-  .toggle {
-    position: relative;
-    display: inline-block;
-    width: 45px;
-    height: 25px;
-  }
-  
-  .toggle input {
-    display: none;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: gray;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color:#04f86a93 ;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
-  }
-  
-  .slider.round {
-    border-radius: 25px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  .flex-item-3-divine-1 {
-    background-image: url(./image/gray_background-1.jpg);
-    grid-row: 1 / 4;
-    grid-column: 1 / 2;
-    /* background-image: linear-gradient(45deg, #fff,#216335); */
-    align-items: center;
-    border-style: groove;
-    border-color: #d7dedd;
-    border-radius: 5px;
-    justify-content: space-around;
-    box-shadow: 16px 14px 20px #0000008c;
-    border-radius: 10px;
-    overflow: hidden;
-    /* align-items: center; */
-    /* position: relative; */
-  }
-  /* .flex-item-3-divine-1::before{
-    background-image: conic-gradient(
-     #ff0052 20deg, 
-     transparent 120deg
-     );
-    width: 150%;
-    height: 150%;
-    position: absolute;
-    animation: rotate 2s linear infinite;
-  }
-  .flex-item-3-divine-1::after{
-    background: #101010;
-    position: absolute;
-    border-radius: 10px;
+   .image{
+    height: 97%;
+    width: 30%;
     display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 0px solid;
+    border-radius: 10px;
+   }
+  
+   .image-contents{
+    /* background-image: linear-gradient(45deg, rgb(21, 91, 177),#0da3b7);   */
+    background-image: linear-gradient(45deg, rgb(71, 68, 68),#2d3031); 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: start;
+    align-content: flex-start;
+    border: 0px solid;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    transition: ease-out 0.3s;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    min-height: 0vh;
+   }
+   .image-contents:hover {
+    box-shadow: inset -535px 0 0 0 rgb(35, 34, 34);
+    cursor: pointer;
+    color: #000;
+  }
+   .menu-home:hover {
+    box-shadow: inset -535px 0 0 0 rgb(51, 51, 53);
+    cursor: pointer;
+    color: #000;
+  }
+   .image-living-room{
+    height: 50%;
+    width: 100%;
+    padding: 0px;
+   }
+   .image-living-room img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border-style: groove;
+    }
+   .camera-living-room{
+    display: flex;
+    /* flex-direction: column; */
+    height: 25%;
+    width: 100%;
+    padding: 0px;
+    vertical-align: middle;
+    text-align: center;
+    gap: 1em;
+   }
+  .temp{
+    width: 30%;
+    justify-content: space-between;
+    vertical-align: middle;
+   }
+   .hum{
+    width: 30%;
+    justify-content: space-between;
+   }
+   .wrapper img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    
+   }
+   .wrapper{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ff0052; 
-    box-shadow: inset  20px 20px 20px #0000008c;
-  }
-  @keyframes rotate {
-    0%{
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(-360deg);
-    }
-  } */
-  .image-container{
-    display: grid;
-    grid-template-rows: 714px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 6em;
-  }
-#living-room-image{
-  background-image: url(/public/image/bedroomimage.jpg);
-  background-repeat: no-repeat;
-  height: 650px;
-  position: relative;
-  border-style: groove;
-  border-color: #d7dedd;
-  border-radius: 5px;
-  box-shadow: 16px 14px 20px #0000008c;
-  border-radius: 10px;
-  overflow: hidden;
-  object-fit: fill;
-}
-#bed-room-image{
-  background-image: url(/public/image/kitt.jpg);
-  background-repeat: no-repeat;
-  height: 650px;
-  position: relative;
-  border-style: groove;
-  border-color: #d7dedd;
-  border-radius: 5px;
-  box-shadow: 16px 14px 20px #0000008c;
-  border-radius: 10px;
-  overflow: hidden;
-  
-}
-#bed-room-image img{
-  object-fit: fill;
-}
-#kitchen-room-image{
-  background-image: url(/public/image/bedd.jpg);
-  background-repeat: no-repeat;
-  height: 650px;
-  position: relative;
-  border-style: groove;
-  border-color: #d7dedd;
-  border-radius: 5px;
-  box-shadow: 16px 14px 20px #0000008c;
-  border-radius: 10px;
-  overflow: hidden;
-  object-fit: fill;
-}
-  .flex-item-3-divine-2 {
-    grid-row: 1 / 4;
-    grid-column: 2 / 3;
-    background-color: #f2f2f2;
-    justify-content: space-evenly;
-    border-style: groove;
-    border-color: #d7dedd;
-    border-radius: 5px;
-    box-shadow: 16px 14px 20px #0000008c;
-    border-radius: 10px;
-    background-image: url(./image/gray_background-1.jpg);
-  } 
-  .flex-item-3-divine-3 {
-    grid-row: 1 / 4;
-    grid-column: 3 / 4;
-    background-color: #f2f2f2;
-    justify-content: space-evenly;
-    border-style: groove;
-    border-color: #d7dedd;
-    border-radius: 5px;
-    box-shadow: 16px 14px 20px #0000008c;
-    border-radius: 10px;
-    background-image: url(./image/gray_background-1.jpg);
-  } 
-  .flex-item-3-divine-4 {
-    grid-row: 4 / 7;
-    grid-column: 1 / 2;
-    background-color: #f2f2f2;
-    border-style: groove;
-    border-color: #d7dedd;
-    border-radius: 5px;
-    justify-content: space-evenly;
-    box-shadow: 16px 14px 20px #0000008c;
-    border-radius: 10px;
-    background-image: url(./image/gray_background-1.jpg);
-  } 
-  .flex-item-3-divine-5 {
-    grid-row: 4 / 7;
-    grid-column: 2 / 3;
-    background-color: #f2f2f2;
-    border-style: groove;
-    border-color: #d7dedd;
-    border-radius: 5px;
-    justify-content: space-around;
-    box-shadow: 16px 14px 20px #0000008c;
-    border-radius: 10px;
-    background-image: url(./image/gray_background-1.jpg);
-  } 
-  .flex-item-3-divine-6 {
-    grid-row: 4 / 7 ;
-    grid-column: 3 / 4;
-    background-color: #f2f2f2;
-    border-style: groove;
-    border-color: #d7dedd;
-    border-radius: 5px;
-    justify-content: space-evenly;
-    border-style: groove;
-    box-shadow: 16px 14px 20px #0000008c;
-    border-radius: 10px;
-    background-image: url(./image/gray_background-1.jpg);
-  } 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 0px solid;
-  }
-  table td img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0px solid;
-    margin-top: 0cm;
-  }
-  table td input{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0px solid;
     padding: 0px;
-    vertical-align: bottom;
-  }
+    margin: 0px;
+    border-radius: 10px;
+}
 
-  table td {
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 0%;
-    padding: 15px;
+   .slider_class{
+    height: 15%;
+   }
+   #namesong{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+   }
+   #image-song{
+    width: 30%;
+   }
+   #image-song img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border:0px solid;
+    border-radius: 10px;
+    border-style: groove;
+   }
+   .song{
+    padding: 1em;
+    display: flex;
+    height: 60%;
+   }
+   .buttonsong{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-items: center;
+    justify-content: space-evenly;
+    gap: 0px;
+    border: 0px solid;
+    border-radius: 10px;
+   }
+   .buttonsong img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+   }
+   .slider_class input{
+    width: 95%;
+    height: 5%;
+    accent-color:  #6a307f;
   }
-  #table-tempshow{
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 0%;
+  .slider_audio{
+     display: flex;
+    width: 100%;
+    height: 20%;
+    justify-items: center;
+    justify-content: space-evenly;
+    gap: 0px;
+    border: 0px solid;
+    border-radius: 10px;
+    align-items: center;
+  }
+  .slider_audio img{
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+  }
+  .slider_audio input{
+    width: 80%;
+    height: 2%;
+    accent-color:  #251f27;
+  }
+ #aircondition-widget{
+    height: 10px;
+ }
+   .music-room{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
     padding: 0px;
-    width: auto;
+    border: 0px solid;
+    border-radius: 10px;
+    color: #fff;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    transition: ease-out 0.3s;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    min-height: 0vh;
+    background-image: linear-gradient(45deg, rgb(175, 188, 188),#232829);  
+   }
+   .music-room:hover {
+    box-shadow: inset -535px 0 0 0 rgb(175, 188, 188);
+    cursor: pointer;
+    color: #000;
+  }
+  
+   .show {
+    display: flex;
+  }
+  .living-room-containers{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 1em;
+  }
+  .button-widget img{
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+  }
+  .menu-widget{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 90vh;
+    align-items: center;
+    border-radius: 5px;
+    border: 0px solid;
+    padding: 0.5em;
+  }
+  .menu-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 95%;
+    width: 90%;
+    padding: 0.5em;
+    background: #efeded;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, rgb(119, 116, 116),#2f3536); 
+    transition: ease-out 0.3s;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    min-height: 0vh;
+  }
+  .menu-settings{
+    height: 10%;
+  }
+   .menu-button-widget{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    height: 90%;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    border: 0px solid;
+  }   
+    /* box-shadow: 16px 14px 20px; */
+   .button-widget{
+    justify-content: space-around;
+    align-items: center;
     height: 70px;
+    width: 70px;
+   }  
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 0px;
-  }
-  .flex-item-3-divine-1 table{
-    text-align: center;
-    vertical-align: middle;
-    border: 0px solid;
-  }
-.living-whether-item td{
-    text-align: left;
-    vertical-align: middle;
-    justify-content: end;
-    border: 0px solid;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
+
+.toggle-btn0, .toggle-btn1, .toggle-btn2, .toggle-btn3,.toggle-btn4,.toggle-btn5,.toggle-btn6{
+	width: 40px;
+	height: 20px;
+	background: gray;
+	border-radius: 30px;
+	padding:5px;
+	transition: all 300ms ease-in-out;
+}
+.toggle-btn0 > .inner-circle, .toggle-btn1 > .inner-circle, .toggle-btn2 > .inner-circle, .toggle-btn3 > .inner-circle,.toggle-btn4 > .inner-circle,.toggle-btn5 > .inner-circle,.toggle-btn6 > .inner-circle{
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius:50%;
+	transition: all 300ms ease-in-out;
+}
+.toggle-btn0.active, .toggle-btn1.active, .toggle-btn2.active,.toggle-btn3.active,.toggle-btn4.active,.toggle-btn5.active,.toggle-btn6.active{
+	background: #9da2ad;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #9bb2c5, 0 0 80px #cce8ff;
+	transition-delay: 0.5s;
+    box-shadow: 0 0 10px #171717, 0 0 20px #131313, 0 0 20px #1f1f20;  
+
+}
+.toggle-btn0.active>.inner-circle,.toggle-btn1.active>.inner-circle,.toggle-btn2.active>.inner-circle,.toggle-btn3.active>.inner-circle,.toggle-btn4.active>.inner-circle,.toggle-btn5.active>.inner-circle,.toggle-btn6.active>.inner-circle{
+	margin-left: 20px;
+   
+}
+.border-show{
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #5a1978, 0 0 20px #3939cd;
+}
+
   footer {
-    background-image:url(./image/living-room.webp);
-    /* background-image: linear-gradient(45deg, rgb(21, 91, 177),#0da3b7);  */
-    /* border-style: groove;
+    background-color: rgb(47, 45, 45);
+    border-style: groove;
     border-color: #333;
-    border-radius: 10px; */
-    height: 50px;
+    border-radius: 10px;
+    height: 10px;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem; 
   }
-  
