@@ -59,15 +59,16 @@ document.getElementById("log-btn").addEventListener('click', function(){
    createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
   .then((userCredential) => {
     const user = userCredential.user;
-    document.getElementById("result-box").style.display="block";
+    document.getElementById("result-error-box").style.display="block";
      document.getElementById("register-div").style.display="none";
-     document.getElementById("result-error-box").innerHTML="Welcome <br>"+registerEmail+" was Registered Successfully!";
+     document.getElementById("result-out").innerHTML="Welcome <br>"+registerEmail+" was Registered Successfully!";
   }).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    document.getElementById("result-box").style.display="block";
+    document.getElementById("result-error-box").style.display="block";
      document.getElementById("register-div").style.display="none";
-     document.getElementById("result").innerHTML="Sorry ! <br>"+ errorMessage;
+    //  document.getElementById("login-div").style.display="none";
+    document.getElementById("result-out").innerHTML="Sorry, invalid Input! <br>"+errorMessage;
 
   });
 });
@@ -75,7 +76,7 @@ document.getElementById("log-btn").addEventListener('click', function(){
 
 document.getElementById("log-in-btn").addEventListener('click', function(){
   signOut(auth).then(() => {
-      window.location.href = "https://smarthome-interface.firebaseapp.com/";
+      window.location.href = "https://smarthome-interface.web.app/";
 
   });
 });

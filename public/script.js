@@ -82,29 +82,29 @@ $(document).ready(function() {
       }
   )};
 });
-document.addEventListener("DOMContentLoaded", () => {
-  var page1Button = document.getElementById("living-room-btn");
-  var page2Button = document.getElementById("kitchen-btn");
-  var page3Button = document.getElementById("bedroom-btn");
-  var page1Container = document.getElementById("livingroom");
-  var page2Container = document.getElementById("kitchen");
-  var page3Container = document.getElementById("bedroom");
+// document.addEventListener("DOMContentLoaded", () => {
+//   var page1Button = document.getElementById("living-room-btn");
+//   var page2Button = document.getElementById("kitchen-btn");
+//   var page3Button = document.getElementById("bedroom-btn");
+//   var page1Container = document.getElementById("livingroom");
+//   var page2Container = document.getElementById("kitchen");
+//   var page3Container = document.getElementById("bedroom");
   
-  for (let i = 1; i < 4; i++) {
-    let button = eval(`page${i}Button`);
-    button.addEventListener("click", () => {
-      for (let j = 1; j < 4; j++) {
-        let container = eval(`page${j}Container`);
-        document.getElementById("button-show").style.display = "none";
-        if (j === i) {
-          container.classList.add("show");
-        } else {
-          container.classList.remove("show");
-        }
-      }
-    });
-  }
-});  
+//   for (let i = 1; i < 4; i++) {
+//     let button = eval(`page${i}Button`);
+//     button.addEventListener("click", () => {
+//       for (let j = 1; j < 4; j++) {
+//         let container = eval(`page${j}Container`);
+//         document.getElementById("button-show").style.display = "none";
+//         if (j === i) {
+//           container.classList.add("show");
+//         } else {
+//           container.classList.remove("show");
+//         }
+//       }
+//     });
+//   }
+// });  
 document.addEventListener("DOMContentLoaded", () => {
   var page4Button = document.getElementById("living-room-btn-2");
   var page5Button = document.getElementById("kitchen-btn-2");
@@ -119,6 +119,27 @@ document.addEventListener("DOMContentLoaded", () => {
         let container1 = eval(`page${j}Container`);
         if (j === i) {
           container1.classList.add("show");
+          if (i===4){
+            document.getElementById("living-image").src = "./image/living-room.webp";
+            document.getElementById("content-temp").src = "./image/high-temperature-gradient-circle-glyph-inverted-icon-vector.webp";
+            document.getElementById("content-hum").src = "./image//humidity-gradient-circle-glyph-inverted-icon-vector.jpg";
+            document.getElementById("hum").innerHTML = "75%";
+            document.getElementById("temp").innerHTML = "20°C";
+          }
+          if (i===5){
+            document.getElementById("living-image").src = "./image/kitchen1.png";
+            document.getElementById("content-temp").src = "./image/carbon-monoxide.png";
+            document.getElementById("content-hum").src = "./image/fire-button.png";
+            document.getElementById("hum").innerHTML = "1000 ppm";
+            document.getElementById("temp").innerHTML = "OFF";
+          }
+          if (i===6){
+            document.getElementById("living-image").src = "./image/bedroom4.jpg";
+            document.getElementById("content-temp").src = "./image/cctv-cam.png";
+            document.getElementById("content-hum").src = "./image/fire.png";
+            document.getElementById("hum").innerHTML = "Tracking";
+            document.getElementById("temp").innerHTML = "Tracking";
+          }
         } else {
           container1.classList.remove("show");
         }
@@ -126,3 +147,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 })
+var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];       
+var today = new Date();
+today.setTime(today.getTime());       
+document.getElementById("day").innerHTML = today.getDate();
+document.getElementById("month").innerHTML = months[today.getMonth()];
+// document.getElementById("hour").innerHTML = today.getTime();
+
+
+function updateClock() {
+    // Get the current date and time
+    const now = new Date();
+    
+    // Display the local time in the "hour" span element
+    const hourSpan = document.getElementById("hour");
+    hourSpan.textContent = now.toLocaleTimeString();
+    
+   ;
+  }
+
+  setInterval(updateClock, 1000);

@@ -19,11 +19,11 @@
       </div>
     </div>
   <div class="main">
-      <div id="button-show" class="button">
+      <!-- <div id="button-show" class="button">
           <button id="living-room-btn" class="button-widget">Living Rooms</button>
           <button id="kitchen-btn" class="button-widget">Kitchen</button>
           <button id="bedroom-btn" class="button-widget">Bedroom</button>
-      </div>
+      </div> -->
       <div class="menu-widget">
         <div class="menu-home">
           <div class="menu-button-widget">
@@ -154,224 +154,309 @@
                   </div>
               </div>
           </div>
-          <div class="image">
-              <div class="image-contents">
-                  <div class="image-living-room">
-                      <img id="living-image" src="image/living-room.webp" alt="img">
-                  </div>
-                  <div class="camera-living-room">
-                      <div class="temp">
-                          <div id="cirle-temp" class="circle">
-                            <div class="content">
-                                  <div>
-                                  <img src="image/high-temperature-gradient-circle-glyph-inverted-icon-vector.webp">
-                                  <!-- <p><span id="temp" >None</span>°C</p> -->
-                                  </div>
-                              </div>
-                          </div>
-                          <div>
-                              <p style="color:rgb(247, 247, 247);"><span id="temp">None</span>°C</p>
-                          </div>    
-                      </div>
-                      <div class="hum">
-                          <div id="cirle-hum" class="circle">
-                              <div class="content">
-                                      <img src="image/humidity-gradient-circle-glyph-inverted-icon-vector.jpg" alt="Humidity">
-                                      <!-- <p><span id="hum">None</span>%</p>  -->
-                              </div>
-                          </div>
-                          <div>
-                              <p style="color:rgb(247, 247, 247);"><span id="hum" style="color:rgb(247, 247, 247);">None</span>%</p>
-                          </div> 
-                      </div>
-                      <div id= "witget6" class = "wrapper">
-                          <img id="d01_img" src="image/idea.png" alt="img">
-                              <div class="toggle-btn6" id="unact6">
-                                      <div class="inner-circle"></div>
-                              </div>
-                              <div class="toggle-btn6 active" id="act6">
-                                      <div class="inner-circle"></div>
-                              </div>
-                          </div>
-                  </div>
-                  <div class="music-room">
-                  <div class="song"> 
-                     <div id="namesong">
-                          <div>
-                              <h2>Duc Phong</h2>
-                          </div>
-                          <div>
-                              <p>Music is my destiny</p>
-                          </div>
-                      </div>
-                      <div id="image-song">
-                          <img src="image/mtphong.jpg" alt="music">
-                      </div>
-                  </div>
-                     <div id="background_slider" class="slider_class">
-                              <input type="range" min="0" max="100" value="10">
-                      </div>
-                      <div class="buttonsong">
-                              <img src="image/play-pause-right.png" alt="">
-                              <img src="image/play.png" alt="">
-                              <img src="image/play-pause-left.png" alt="">
-                      </div>
-                     </div>
-                     
-                  </div>
-              </div>
           </div>
       </div>
       <div id="bedroom" class="containers-room">
-          <div class="living-room-containers">
-          <div id="main-bedroom" class="main-menu-contents">
-              <div class="main-menu-contents-1">
-                  <div id="tv-device" class="device">
-                          <div class="tv-device-button">
-                              <!-- <p>Button</p> -->
-                          </div>
-                          <div class="tv-device-image">
-                              <!-- <img src="/television.png" alt=""> -->
-                          </div>
-                          <div class="tv-device-name">
-                              <!-- <p>Television</p> -->
-                          </div>
-                  </div>
-                  <div id="air-condition-device" class="device"></div>
-                  <div id="temp-measure" class="device"></div>
-          </div>
-              <div class="main-menu-contents-2">
-                  <div id="smart-light" class="device"></div>
-                  <div id="smart-lock" class="device"></div>
-                  <div id="smart-window" class="device"></div>
-              </div>
-          </div>
-      
-          <div class="image">
-              <div class="image-contents">
-                  <div class="image-living-room">
-                      <img src="image/bedroom.jpg" alt="image">
-                  </div>
-                  <div class="camera-living-room">
-                      <div class="temp">
-                          <div id="cirle-temp" class="circle">
-                            <div class="content">
-                                  <img src="image/temparature.png">
-                             <!-- <p><span id="temp">None</span>°C</p>  -->
+        <div class="living-room-containers">
+            <div id="mainliving" class="main-menu-contents">
+                <div class="main-menu-contents-1">
+                    <div id="witget0" class="device">
+                            <div class="tv-device-button">
+                                <label class="toggle">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label>
                             </div>
-                          </div>   
-                      </div>
-                      <div class="hum">
-                          <div id="cirle-hum" class="circle">
-                              <div class="content">
-                                      <img src="image/humidity.png" alt="Humidity">
-                            <!-- <p><span id="hum">None</span>%</p>  -->
-                              </div>
-                          </div>
-                      </div>   
-                  </div>
-                  <div class="music-room">
-                  <div class="song"> 
-                     <div id="namesong">
-                          <div>
-                              <h2>Duc Phong</h2>
-                          </div>
-                          <div>
-                              <p>20139084</p>
-                          </div>
-                      </div>
-                      <div id="image-song">
-                          <img src="image/mtphong.jpg" alt="music">
-                      </div>
-                  </div>
-                     <div id="background_slider" class="slider_class">
-                              <input type="range" min="0" max="100" value="10">
-                      </div>
-                      <div class="buttonsong">
-                              <img src="image/play-pause-right.png" alt="">
-                              <img src="image/play.png" alt="">
-                              <img src="image/play-pause-left.png" alt="">
-                      </div>
-                     </div>
-                     
-                  </div>
-              </div>
-          </div>
+                            <div class="tv-device-image">
+                                <img id="tv" src="image/beko-air-purifier-with-3-stage-hepa-filter-atp6100i-1-6501fc6c-high.jpeg" alt="">
+                            </div>
+                            <div class="tv-device-name">
+                                <p>Refrigerator</p>
+                            </div>
+                    </div>
+                    <div id="witget1" class="device">
+                        <div class="air-condition-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                    </div>
+                    <div class="air-condition-image">
+                        <img src="image/air-condisioner.jpg"  alt="">
+                    </div>
+                    <div id="aircondition-widget" class="slider_audio">
+                        <input type="range" min="0" max="100" value="10">
+                        <p style="color:rgba(28, 26, 26, 0.852);"><span >26</span>°C</p>
+                    </div>
+                    <div class="air-condition-name">
+                        <p>Air Condisioner</p>
+                    </div>
+                    </div>
+                    <div id="witget2" class="device">
+                        <div class="robot-cleaner-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <div class="robot-cleaner-image">
+                            <img src="image/c27a4d4a-8a0d-4132-bcad-ea710a9452d0.cd0e78d84d98001bfd8bf18b2f9658e2.jpeg" alt="">
+                        </div>
+                        <div class="robot-cleaner-name">
+                            <p>Smart Fan</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="main-menu-contents-2">
+                    <div id="witget3" class="device">
+                        <div class="smart-audio-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <div class="smart-audio-image">
+                            <img id="audio" src="image/smartled.webp" alt="">
+                        </div>
+                        <div id="audio-widget" class="slider_audio">
+                            <input type="range" min="0" max="100" value="10">
+                            <img id="volume" src="image/volume-up-interface-symbol.png" alt="img">
+                        </div>
+                        <div class="smart-audio-name">
+                            <p>Audio System</p>
+                        </div>
+                    </div>
+                    <div id="witget4" class="device">
+                        <div class="smart-lock-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <div class="smart-lock-image">
+                            <img id="lock" src="image/led-smart-tv-isolated-white-background_389832-925.avif" alt="">
+                        </div>
+                        <div class="smart-lock-name">
+                            <p>Smart Lock</p>
+                        </div>
+                    </div>
+                    <div id="witget5" class="device">
+                        <div class="smart-curtain-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <div class="smart-curtain-image">
+                            <img id="curtain" src="image/curtains.webp" alt="">
+                        </div>
+                        <div class="smart-curtain-name">
+                            <p>Curtains</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
       </div>
       <div id="kitchen" class="containers-room">
-          <div class="living-room-containers">
-              <div id="mainkitchen" class="main-menu-contents">
-                  <div class="main-menu-contents-1">
-                      <div id="tv-device" class="device">
-                        
-                      </div>
-                      <div id="air-condition-device" class="device"></div>
-                      <div id="temp-measure" class="device"></div>
-              </div>
-                  <div class="main-menu-contents-2">
-                      <div id="smart-light" class="device"></div>
-                      <div id="smart-lock" class="device"></div>
-                      <div id="smart-window" class="device"></div>
-                  </div>
-              </div>
-          
-              <div class="image">
-                  <div class="image-contents">
-                      <div class="image-living-room">
-                          <img src="image/kitchen1.png" alt="image">
-                      </div>
-                      <div class="camera-living-room">
-                          <div class="temp">
-                              <div id="cirle-temp" class="circle">
-                                <div class="content">
-                                      <img src="image/temparature.png">
-                                 <!-- <p><span id="temp">None</span>°C</p>  -->
-                                </div>
-                              </div>   
-                          </div>
-                          <div class="hum">
-                              <div id="cirle-hum" class="circle">
-                                  <div class="content">
-                                          <img src="image/humidity.png" alt="Humidity">
-                                <!-- <p><span id="hum">None</span>%</p>  -->
-                                  </div>
-                              </div>
-                          </div>   
-                      </div>
-                      <div class="music-room">
-                      <div class="song"> 
-                         <div id="namesong">
-                              <div>
-                                  <h2>Duc Phong</h2>
-                              </div>
-                              <div>
-                                  <p>Music is my destiny</p>
-                              </div>
-                          </div>
-                          <div id="image-song">
-                              <img src="image/mtphong.jpg" alt="music">
-                          </div>
-                      </div>
-                         <div id="background_slider" class="slider_class">
-                                  <input type="range" min="0" max="100" value="10">
-                          </div>
-                          <div class="buttonsong">
-                                  <img src="image/play-pause-right.png" alt="">
-                                  <img src="image/play.png" alt="">
-                                  <img src="image/play-pause-left.png" alt="">
-                          </div>
-                         </div>
-                         
-                      </div>
-                  </div>
-              </div>
+        <div class="living-room-containers">
+            <div id="mainliving" class="main-menu-contents">
+                <div class="main-menu-contents-1">
+                    <div id="witget0" class="device">
+                            <div class="tv-device-button">
+                                <label class="toggle">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label>
+                            </div>
+                            <div class="tv-device-image">
+                                <img id="tv" src="image/tulanh.jpg" alt="">
+                            </div>
+                            <div class="tv-device-name">
+                                <p>Refrigerator</p>
+                            </div>
+                    </div>
+                    <div id="witget1" class="device">
+                        <div class="air-condition-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                    </div>
+                    <div class="air-condition-image">
+                        <img src="image/air-condisioner.jpg"  alt="">
+                    </div>
+                    <div id="aircondition-widget" class="slider_audio">
+                        <input type="range" min="0" max="100" value="10">
+                        <p style="color:rgba(28, 26, 26, 0.852);"><span id="air-condisioner">None</span>°C</p>
+                    </div>
+                    <div class="air-condition-name">
+                        <p>Air Condisioner</p>
+                    </div>
+                    </div>
+                    <div id="witget2" class="device">
+                        <div class="robot-cleaner-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <div class="robot-cleaner-image">
+                            <img id="robot-image" src="image/rotbot-cleaner.jpg" alt="">
+                        </div>
+                        <div class="robot-cleaner-name">
+                            <p>Robot Cleaner</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="main-menu-contents-2">
+                    <div id="witget3" class="device">
+                        <div class="smart-audio-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <div class="smart-audio-image">
+                            <img id="audio" src="image/lovisong.webp" alt="">
+                        </div>
+                        <div id="audio-widget" class="slider_audio">
+                            <input type="range" min="0" max="100" value="10">
+                            <img id="volume" src="image/volume-up-interface-symbol.png" alt="img">
+                        </div>
+                        <div class="smart-audio-name">
+                            <p>Audio System</p>
+                        </div>
+                    </div>
+                    <div id="witget4" class="device">
+                        <div class="smart-lock-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <div class="smart-lock-image">
+                            <img id="lock" src="image/maygiat.jpg" alt="">
+                        </div>
+                        <div class="smart-lock-name">
+                            <p>Smart Lock</p>
+                        </div>
+                    </div>
+                    <div id="witget5" class="device">
+                        <div class="smart-curtain-button">
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <div class="smart-curtain-image">
+                            <img id="curtain" src="image/lovisong.webp" alt="">
+                        </div>
+                        <div class="smart-curtain-name">
+                            <p>Curtains</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
       </div>
-
+      <div class="image">
+        <div class="image-contents">
+          <div class="sensor1">
+              <div class="widget">
+                <div class="date">
+                  <span id="day"></span>
+                  <span id="month"></span>
+                  <div class="clock">
+                    <span id="hour"></span>
+                    <span id="GMT"></span>
+                  </div>
+                </div>
+               
+                <div class="weather">
+                  <div id="weather-icon">
+                    <img src="image/cloudy.png">
+                    <div id="weather">Cloudy</div>
+                  </div>
+               <div class="weather-wrapper">
+                <div class="weather-card-madrid">
+                    <div class="weather-icon sun"></div>
+                    <h1>26º</h1>
+                    <p>TP HO CHI MINH</p>
+                </div>
+              </div>
+              </div>
+          </div>
+          </div>
+            <div class="image-living-room">
+                <img id="living-image" src="image/living-room.webp" alt="img">
+            </div>
+            <div class="camera-living-room">
+                <div class="temp">
+                    <div id="cirle-temp" class="circle">
+                      <div class="content">
+                            <div>
+                            <img src="image/high-temperature-gradient-circle-glyph-inverted-icon-vector.webp" id="content-temp">
+                            <!-- <p><span id="temp" >None</span>°C</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="color:rgb(247, 247, 247);"><span id="temp">None</span></p>
+                    </div>    
+                </div>
+                <div class="hum">
+                    <div id="cirle-hum" class="circle">
+                        <div class="content">
+                                <img src="image/humidity-gradient-circle-glyph-inverted-icon-vector.jpg" alt="Humidity" id="content-hum">
+                                <!-- <p><span id="hum">None</span>%</p>  -->
+                        </div>
+                    </div>
+                    <div id="amount-air">
+                        <p style="color:rgb(247, 247, 247);"><span id="hum" style="color:rgb(247, 247, 247);">None</span></p>
+                    </div> 
+                </div>
+                <div id= "witget6" class = "wrapper">
+                    <img id="d01_img" src="image/idea.png" alt="img">
+                        <div class="toggle-btn6" id="unact6">
+                                <div class="inner-circle"></div>
+                        </div>
+                        <div class="toggle-btn6 active" id="act6">
+                                <div class="inner-circle"></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="music-room">
+            <div class="song"> 
+               <div id="namesong">
+                    <div>
+                        <h2>Duc Phong</h2>
+                    </div>
+                    <div>
+                        <p>Music is my destiny</p>
+                    </div>
+                </div>
+                <div id="image-song">
+                    <img src="image/mtphong.jpg" alt="music">
+                </div>
+            </div>
+               <div id="background_slider" class="slider_class">
+                        <input type="range" min="0" max="100" value="10">
+                </div>
+                <div class="buttonsong">
+                        <img src="image/play-pause-right.png" alt="">
+                        <img src="image/play.png" alt="">
+                        <img src="image/play-pause-left.png" alt="">
+                </div>
+               </div>
+               
+            </div>
+        </div>
   </div>  
   <script type="text/javascript" src="script.js"></script>
 
     <footer>
-      <!-- <p>&copy; 20139084 - Le Duc Phong</p> -->
+      <p>&copy; 20139084 - Le Duc Phong</p>
     </footer>
    
   </body>
