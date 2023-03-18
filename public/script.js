@@ -27,11 +27,16 @@ firebase.database().ref("/TT_IoT/air-condition").on("value",function(snapshot){
   document.getElementById("air-condisioner").innerHTML = nd;
   console.log(nd);
 });
-
+var page4Button = document.getElementById("living-room-btn-2");
+var page5Button = document.getElementById("kitchen-btn-2");
+var page6Button = document.getElementById("bedroom-btn-2");
+var page4Container = document.getElementById("livingroom");
+var page5Container = document.getElementById("kitchen");
+var page6Container = document.getElementById("bedroom");
 
 $(document).ready(function() {
   var database = firebase.database();
-  const leds = ["Led0","Led1", "Led2", "Led3", "Led4", "Led5", "Led6"];
+  const leds = ["thietbi0","thietbi1", "thietbi2", "thietbi3", "thietbi4", "thietbi5", "thietbi6"];
 
   function updateStatus(led, status) {
     if (status == "1"){
@@ -55,9 +60,9 @@ $(document).ready(function() {
     
   }
   
-  database.ref("TT_IoT/").on("value", function(snapshot) {
+  database.ref("TT_IoT/Devices").on("value", function(snapshot) {
     for (let i = 0; i < leds.length; i++) {
-      var status = snapshot.val()[`${leds[i]}Status`];
+      var status = snapshot.val()[`${leds[i]}`];
       updateStatus(i, status);
     }
   });
@@ -66,10 +71,10 @@ $(document).ready(function() {
     $(`.toggle-btn${i}`).click(function() {
       var firebaseRef;
       var check_value;
-      database.ref(`/TT_IoT/Led${i}Status`).on("value", function(snapshot){
+      database.ref(`/TT_IoT/Devices/thietbi${i}`).on("value", function(snapshot){
           check_value = snapshot.val();
       });
-      firebaseRef = firebase.database().ref("TT_IoT/").child(`/${leds[i]}Status`);
+      firebaseRef = firebase.database().ref("TT_IoT/Devices").child(`/${leds[i]}`);
       // check_value = snapshot.val()[`${leds[i]}Status`];
       // firebaseRef.set(check_value == "1" ? "0" : "1");
       if(check_value == "1"){    // post to firebase
@@ -81,42 +86,16 @@ $(document).ready(function() {
               }
       }
   )};
-});
-// document.addEventListener("DOMContentLoaded", () => {
-//   var page1Button = document.getElementById("living-room-btn");
-//   var page2Button = document.getElementById("kitchen-btn");
-//   var page3Button = document.getElementById("bedroom-btn");
-//   var page1Container = document.getElementById("livingroom");
-//   var page2Container = document.getElementById("kitchen");
-//   var page3Container = document.getElementById("bedroom");
-  
-//   for (let i = 1; i < 4; i++) {
-//     let button = eval(`page${i}Button`);
-//     button.addEventListener("click", () => {
-//       for (let j = 1; j < 4; j++) {
-//         let container = eval(`page${j}Container`);
-//         document.getElementById("button-show").style.display = "none";
-//         if (j === i) {
-//           container.classList.add("show");
-//         } else {
-//           container.classList.remove("show");
-//         }
-//       }
-//     });
-//   }
-// });  
+}); 
+
 document.addEventListener("DOMContentLoaded", () => {
-  var page4Button = document.getElementById("living-room-btn-2");
-  var page5Button = document.getElementById("kitchen-btn-2");
-  var page6Button = document.getElementById("bedroom-btn-2");
-  var page4Container = document.getElementById("livingroom");
-  var page5Container = document.getElementById("kitchen");
-  var page6Container = document.getElementById("bedroom");
+  hello = document.getElementById("helloworld");
   for (let i = 4; i < 7; i++) {
     let button1 = eval(`page${i}Button`);
     button1.addEventListener("click", () => {
       for (let j = 4; j < 7; j++) {
         let container1 = eval(`page${j}Container`);
+        hello.style.display = "none";
         if (j === i) {
           container1.classList.add("show");
           if (i===4){
@@ -128,8 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           if (i===5){
             document.getElementById("living-image").src = "./image/kitchen1.png";
-            document.getElementById("content-temp").src = "./image/carbon-monoxide.png";
-            document.getElementById("content-hum").src = "./image/fire-button.png";
+            document.getElementById("content-hum").src = "./image/carbon-monoxide.png";
+            document.getElementById("content-temp").src = "./image/fire-button.png";
             document.getElementById("hum").innerHTML = "1000 ppm";
             document.getElementById("temp").innerHTML = "OFF";
           }
@@ -167,3 +146,32 @@ function updateClock() {
   }
 
   setInterval(updateClock, 1000);
+  var sliderAir = document.getElementById("sliderAir");
+  var SelectValue = document.getElementById("SelectValue");
+  var sliderAudio = document.getElementById("sliderAudio");
+  var AudioValue = document.getElementById("AudioValue"); /* create variable*/
+  SelectValue.innerHTML = sliderAir.value; /* get value from slider id in HTML but the value unable to change*/
+  AudioValue.innerHTML = sliderAudio.value;
+  //--------------get value from firebase to show it when first run (sync between html and firebase)
+  var database = firebase.database();
+  database.ref("TT_IoT/").on("value", function(snap){      
+  //get value blueValue from firebase and store to  SelectValueBlue.innerHTML	
+    
+    sliderAir.value = snap.val().Aircondition;           
+    SelectValue.innerHTML = snap.val().Aircondition;
+    sliderAudio.value = snap.val().AudioVolume;           
+    AudioValue.innerHTML = snap.val().AudioVolume;   
+    
+  });
+  sliderAir.oninput = function(){
+      SelectValue.innerHTML = this.value; /* able to change the value*/
+      var firebaseRef = firebase.database().ref("TT_IoT/").child("Aircondition");
+      firebaseRef.set(sliderAir.value);           
+  
+  }
+  sliderAudio.oninput = function(){
+    SelectValue.innerHTML = this.value; /* able to change the value*/
+    var firebaseRef = firebase.database().ref("TT_IoT/").child("AudioVolume");
+    firebaseRef.set(sliderAudio.value);           
+
+}

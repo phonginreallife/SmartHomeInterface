@@ -1,0 +1,17 @@
+{
+  "Aircondition": "26",
+  "AudioVolume": "83",
+  "Devices": {
+    "thietbi0": "0",
+    "thietbi1": "0",
+    "thietbi2": "0",
+    "thietbi3": "0",
+    "thietbi4": "0",
+    "thietbi5": "0",
+    "thietbi6": "1"
+  },
+  "Light": "1",
+  "MusicSlider": 40,
+  "huminity": "75%",
+  "temperature": "20°C"
+}

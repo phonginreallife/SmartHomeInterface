@@ -125,6 +125,12 @@
     width: 70px;
     height: 70px;
   }
+  .hello{
+    height: 100%;
+    width: auto;
+    display: block;
+    justify-content: space-evenly;
+  }
   .main {
     background-color: #fff;
     display: flex;
@@ -138,7 +144,6 @@
     border-color: #fff; */
     padding: 0px;
     gap: 1em;
-    justify-content: space-evenly;
   }
   .button{
     display: flex;
@@ -513,7 +518,7 @@
     width: 70px;
    }  
 
-.progress{
+.progress1{
     display: flex;
     flex-direction: column;
     justify-content: center;

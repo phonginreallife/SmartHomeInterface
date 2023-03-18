@@ -71,8 +71,11 @@
                       <img src="image/air-condisioner.jpg" alt="">
                   </div>
                   <div id="aircondition-widget" class="slider_audio">
-                      <input type="range" min="0" max="100" value="10">
-                      <p style="color:rgba(28, 26, 26, 0.852);"><span id="air-condisioner">None</span>°C</p>
+                    <div class="progress1">
+                       	<!-- indicate value to website-->
+                        <input class="slider1" type="range" min="15" max="35" value="0" id="sliderAir"> <!-- create slider-->
+                    </div>
+                      <p style="color:rgba(28, 26, 26, 0.852);"><span  id="SelectValue">None</span>°C</p>
                   </div>
                   <div class="air-condition-name">
                       <p>Air Condisioner</p>
@@ -88,7 +91,7 @@
                             </div>
                       </div>
                       <div class="robot-cleaner-image">
-                          <img src="image/cleaner-robot.avif" alt="">
+                          <img src="image/rotbot-cleaner.jpg" alt="">
                       </div>
                       <div class="robot-cleaner-name">
                           <p>Robot Cleaner</p>
@@ -109,7 +112,14 @@
                           <img id="audio" src="image/audio.jpg!d" alt="">
                       </div>
                       <div id="audio-widget" class="slider_audio">
-                          <input type="range" min="0" max="100" value="10">
+                        <div class="progress1">
+                            <!-- indicate value to website-->
+                            <div class="Value" id="AudioValue">
+                                    <p style="color:rgba(28, 26, 26, 0.852);"><span >None</span>%</p>
+                            </div>
+                            <input class="slider1" type="range" min="0" max="100" value="0" id="sliderAudio">
+                             <!-- create slider-->
+                        </div>
                           <img id="volume" src="image/volume-up-interface-symbol.png" alt="img">
                       </div>
                       <div class="smart-audio-name">
@@ -146,7 +156,7 @@
                             </div>
                       </div>
                       <div class="smart-curtain-image">
-                          <img id="curtain" src="image/curtains.webp" alt="">
+                          <img id="curtain" src="image/ready-made-curtain-embriodery-sheer-e1030-white.jpg" alt="">
                       </div>
                       <div class="smart-curtain-name">
                           <p>Curtains</p>
@@ -171,7 +181,7 @@
                                 <img id="tv" src="image/beko-air-purifier-with-3-stage-hepa-filter-atp6100i-1-6501fc6c-high.jpeg" alt="">
                             </div>
                             <div class="tv-device-name">
-                                <p>Refrigerator</p>
+                                <p>Air Purifier</p>
                             </div>
                     </div>
                     <div id="witget1" class="device">
@@ -223,7 +233,7 @@
                             <img id="volume" src="image/volume-up-interface-symbol.png" alt="img">
                         </div>
                         <div class="smart-audio-name">
-                            <p>Audio System</p>
+                            <p>RGB LED System</p>
                         </div>
                     </div>
                     <div id="witget4" class="device">
@@ -234,10 +244,10 @@
                               </label>
                         </div>
                         <div class="smart-lock-image">
-                            <img id="lock" src="image/led-smart-tv-isolated-white-background_389832-925.avif" alt="">
+                            <img id="lock" src="image/TCL-LED.png" alt="">
                         </div>
                         <div class="smart-lock-name">
-                            <p>Smart Lock</p>
+                            <p>Smart TV</p>
                         </div>
                     </div>
                     <div id="witget5" class="device">
@@ -248,7 +258,7 @@
                               </label>
                         </div>
                         <div class="smart-curtain-image">
-                            <img id="curtain" src="image/curtains.webp" alt="">
+                            <img id="curtain" src="image/ready-made-curtain-embriodery-sheer-e1030-white.jpg" alt="">
                         </div>
                         <div class="smart-curtain-name">
                             <p>Curtains</p>
@@ -288,7 +298,7 @@
                     </div>
                     <div id="aircondition-widget" class="slider_audio">
                         <input type="range" min="0" max="100" value="10">
-                        <p style="color:rgba(28, 26, 26, 0.852);"><span id="air-condisioner">None</span>°C</p>
+                        <p style="color:rgba(28, 26, 26, 0.852);"><span>25</span>°C</p>
                     </div>
                     <div class="air-condition-name">
                         <p>Air Condisioner</p>
@@ -322,10 +332,10 @@
                         </div>
                         <div id="audio-widget" class="slider_audio">
                             <input type="range" min="0" max="100" value="10">
-                            <img id="volume" src="image/volume-up-interface-symbol.png" alt="img">
+                            <p style="color:rgba(28, 26, 26, 0.852);"><span>65</span>°C</p>
                         </div>
                         <div class="smart-audio-name">
-                            <p>Audio System</p>
+                            <p>Microwave Oven</p>
                         </div>
                     </div>
                     <div id="witget4" class="device">
@@ -339,7 +349,7 @@
                             <img id="lock" src="image/maygiat.jpg" alt="">
                         </div>
                         <div class="smart-lock-name">
-                            <p>Smart Lock</p>
+                            <p>Washing Machine</p>
                         </div>
                     </div>
                     <div id="witget5" class="device">
@@ -350,10 +360,10 @@
                               </label>
                         </div>
                         <div class="smart-curtain-image">
-                            <img id="curtain" src="image/lovisong.webp" alt="">
+                            <img id="curtain" src="image/lonuong.webp" alt="">
                         </div>
                         <div class="smart-curtain-name">
-                            <p>Curtains</p>
+                            <p>Dishwasher</p>
                         </div>
                     </div>
                 </div>
@@ -452,7 +462,12 @@
                
             </div>
         </div>
-  </div>  
+        <div class="hello" id="helloworld">
+            <h1>Welcome Back!</h1>
+            <h3> Click the icons respectively to go to your room.</h3>
+        </div>
+
+    </div>  
   <script type="text/javascript" src="script.js"></script>
 
     <footer>
