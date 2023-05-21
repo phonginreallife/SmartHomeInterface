@@ -102,8 +102,16 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("living-image").src = "./image/living-room.webp";
             document.getElementById("content-temp").src = "./image/high-temperature-gradient-circle-glyph-inverted-icon-vector.webp";
             document.getElementById("content-hum").src = "./image//humidity-gradient-circle-glyph-inverted-icon-vector.jpg";
-            document.getElementById("hum").innerHTML = "75%";
-            document.getElementById("temp").innerHTML = "20°C";
+            firebase.database().ref("/TT_IoT/temperature").on("value",function(snapshot){
+              var nd = snapshot.val();  
+              document.getElementById("temp").innerHTML = nd;
+              console.log(nd);
+            });
+            firebase.database().ref("/TT_IoT/huminity").on("value",function(snapshot){
+              var nd = snapshot.val();  
+              document.getElementById("hum").innerHTML = nd;
+              console.log(nd);
+            });
           }
           if (i===5){
             document.getElementById("living-image").src = "./image/kitchen1.png";
